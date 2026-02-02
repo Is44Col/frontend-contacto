@@ -1,0 +1,90 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-image: linear-gradient(35deg,#111,#333);
+    margin: 0;
+}
+
+.form_contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 30vw;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 10px #fff1;
+    overflow: hidden;
+    min-width: 250px;
+    border: 1px solid #222;
+}
+
+label {
+    color: #fff;
+}
+
+input, textarea {
+    background-color: #555;
+    border-radius: 4px;
+    border: 0 solid #000;
+    border-bottom: 2px solid #eee;
+    padding: 5px;
+    color: #fff;
+    transition: border-bottom.5s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    color: #fff;
+    border-bottom: 2px solid #48e;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #ccc;
+}
+
+textarea {
+    min-width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-height: 50px;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+#submit {  
+    margin-top: 10px;
+    letter-spacing: 2px;
+    color: #fff;
+    box-shadow: 0 1px 10px #0006;
+    transition: box-shadow.1s, translate.1s;
+}
+
+#submit:hover {
+    cursor: pointer;
+    translate: 0 1px;
+    box-shadow: 0 1px 10px #0000;
+}
+
+.form_container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        text-align: center;
+    }
+}
