@@ -10,16 +10,17 @@
     <div class="form_container">
         <div>
             <h1>Contactanos</h1>
-            <form action="contacto" method="post" class="form_contacto">
+            <form method="post" class="form_contacto" id="form">
                 <label for="input1">Nombre</label>
-                <input id="input1" type="text" required>
+                <input name="nombre" id="input1" type="text" required>
                 <label for="input2">Telefono</label>
-                <input id="input2" type="tel" placeholder="123-456-7891" required>
+                <input name="contacto" id="input2" type="tel" placeholder="123-456-7891" required>
                 <label for="input3">Mensaje</label>
-                <textarea name="Mensaje" id="input3" placeholder="Deja tu mensaje aqui" required></textarea>
+                <textarea name="mensaje" id="input3" placeholder="Deja tu mensaje aqui" required></textarea>
                 <input type="submit" name="ENVIAR" id="submit">
             </form>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
